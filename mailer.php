@@ -1,5 +1,5 @@
 <?php
-$to="kl";
+$to="RECIEVER EMAIL";
 $nom_candidat =  $_POST['contactName'];
 $mail_client = $_POST['contactEmail'];
 $num= $_POST['contactP'];
