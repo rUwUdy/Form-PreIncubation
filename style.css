@@ -1,0 +1,603 @@
+div.calendar
+{
+  color: #000;
+  font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+  -moz-box-shadow:0px 0px 8px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow:0px 0px 8px rgba(0, 0, 0, 0.5);
+  box-shadow:0px 0px 8px rgba(0, 0, 0, 0.5);
+  
+}
+::placeholder{
+  color:white !important;
+}
+input{
+  padding-right:0px !important ;
+  width:100%;
+}
+.content img {
+  transition: 1s;
+  opacity: 0;
+}
+
+.content img[data-scroll="in"] {
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+.content form {
+  transition: 1s;
+  opacity: 0;
+}
+
+.content form[data-scroll="in"] {
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+.content a {
+  transition: 1s;
+  opacity: 0;
+}
+
+.content a[data-scroll="in"] {
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
+.content h1 {
+  transition: 1s;
+  opacity: 0;
+}
+.content h1[data-scroll="in"] {
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+.content h2 {
+  transition: 1s;
+  opacity: 0;
+}
+
+.content h2[data-scroll="in"] {
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+.content h3 {
+  transition: 1s;
+  opacity: 0;
+}
+
+.content h3[data-scroll="in"] {
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+.content p{
+  transition: 1s;
+  opacity: 0;
+}
+.content p[data-scroll="in"]{
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+label{
+  color: white;
+}
+body{
+  margin:0px !important;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
+}
+body{
+  margin:0 !important;
+  width: 100%;
+  overflow-x: hidden;
+}
+.container3{
+  margin-left: -9%;
+}
+.container1{
+  width: 70px;
+  margin-left: 4%;
+}
+.container2{
+  margin-left: -4%;
+    padding-top: 13px;
+    padding-bottom: 5%;
+    text-align: right;
+    color:white;
+
+  }
+.contact-content {
+  margin-left: 17.65%;
+  max-width: 1000px;
+  background-color: #212529;
+  color: rgba(255, 255, 255, 0.4);
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  font-family: "montserrat-light", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2;
+  position: relative;
+}
+
+.contact-content h3 {
+  margin-top: 0;
+  margin-bottom: 6.6rem;
+  color: #FFFFFF;
+}
+
+.contact-content h5 {
+  margin-top: 0;
+  color: #3a5e96;
+}
+
+.contact-content input[type="email"],
+.contact-content input[type="number"],
+.contact-content input[type="search"],
+.contact-content input[type="text"],
+.contact-content input[type="tel"],
+.contact-content input[type="url"],
+.contact-content input[type="password"],
+.contact-content textarea,
+.contact-content select {
+  color: rgba(255, 255, 255, 0.6);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  margin-bottom: .9rem;
+}
+
+.contact-content input[type="email"]:focus,
+.contact-content input[type="number"]:focus,
+.contact-content input[type="search"]:focus,
+.contact-content input[type="text"]:focus,
+.contact-content input[type="tel"]:focus,
+.contact-content input[type="url"]:focus,
+.contact-content input[type="password"]:focus,
+.contact-content textarea:focus,
+.contact-content select:focus {
+  color: #FFFFFF;
+  border-bottom: 1px solid #3a5e96;
+}
+
+.contact-content button,
+.contact-content .btn {
+  margin-top: 3.6rem;
+}
+
+.contact-content input::-webkit-input-placeholder,
+.contact-content select::-webkit-input-placeholder,
+.contact-content textarea::-webkit-input-placeholder {
+  color: #4f4f4f;
+}
+
+.contact-content input:-moz-placeholder,
+.contact-content select:-moz-placeholder,
+.contact-content textarea:-moz-placeholder {
+  color: #4f4f4f;
+  /* Firefox 18- */
+}
+
+.contact-content input::-moz-placeholder,
+.contact-content select::-moz-placeholder,
+.contact-content textarea::-moz-placeholder {
+  color: #4f4f4f;
+  /* Firefox 19+ */
+}
+
+.contact-content input:-ms-input-placeholder,
+.contact-content select:-ms-input-placeholder,
+.contact-content textarea:-ms-input-placeholder {
+  color: #4f4f4f;
+}
+
+.contact-content input.placeholder,
+.contact-content select.placeholder,
+.contact-content textarea.placeholder {
+  color: #4f4f4f !important;
+}
+
+.contact-primary,
+.contact-secondary {
+  float: left;
+  padding: 0 5rem;
+}
+
+.contact-primary {
+  margin: auto;
+  width: 65%;
+}
+
+.contact-primary #contactForm {
+  margin-top: -1.5rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .contact-content {
+    max-width: 700px;
+  }
+
+  .contact-primary,
+  .contact-secondary {
+    float: none;
+    width: 100%;
+  }
+
+  .contact-primary #contactForm {
+    margin-top: -1.5rem;
+    margin-bottom: 7.2rem;
+  }
+
+  .contact-secondary .hide-on-fullwidth {
+    display: none;
+  }
+
+  .contact-secondary::before {
+    display: none;
+  }
+
+  .message-warning,
+  .message-success {
+    margin-bottom: 6rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+
+  .contact-primary,
+  .contact-secondary {
+    padding: 0 5px;
+  }
+}
+
+.btn.full-width,
+    button.full-width {
+      width: 100%;
+      margin-right: 0;
+    }
+
+.h6 {
+  font-family: "montserrat-medium", sans-serif;
+  color: #000000;
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+
+
+.display-2 {
+  font-family: "montserrat-medium", sans-serif;
+  font-size: 5.2rem;
+  line-height: 1.255;
+  color: #000000;
+  margin-top: 0;
+}
+
+.display-2--light {
+  color: #3a5e96;
+}
+.subhead+.display-2 {
+  margin-top: .6rem;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+  .display-1 {
+    font-size: 7.2rem;
+  }
+
+  .display-2 {
+    font-size: 4.4rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .display-1 {
+    font-size: 6.5rem;
+  }
+
+  .display-2 {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .display-1 {
+    font-size: 5rem;
+  }
+
+  .display-2 {
+    font-size: 3.3rem;
+  }
+
+  .subhead {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .display-1 {
+    font-size: 4.2rem;
+  }
+
+  .display-2 {
+    font-size: 3rem;
+  }
+}
+
+
+.subhead+.display-2 {
+  margin-top: .6rem;
+}
+
+.subhead {
+  font-family: "montserrat-bold", sans-serif;
+  font-size: 1.7rem;
+  line-height: 1.333;
+  text-transform: uppercase;
+  letter-spacing: .25rem;
+  color: #FFFFFF;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.subhead--dark {
+  color: #000000;
+}
+
+
+
+
+.contact__line {
+  display: block;
+  width: 2px;
+  height: 20.4rem;
+  background-color: #3a5e96;
+  position: absolute;
+  left: 50%;
+  top: -10.2rem;
+  margin-left: -1px;
+}
+
+.s-contact .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .8;
+  background-color: #151515;
+}
+
+
+
+.s-home .shadow-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .4;
+  background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+  background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#cc000000', GradientType=0);
+}
+
+.s-home .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .6;
+  background-color: #000000;
+}
+
+
+.s-contact .form-field {
+  position: relative;
+}
+
+.s-contact .form-field:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.s-contact .form-field label {
+  font-family: "montserrat-light", sans-serif;
+  font-size: 1rem;
+  line-height: 2.4rem;
+  position: absolute;
+  bottom: -0.3rem;
+  right: .6rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  padding: 0 2rem;
+  margin: 0;
+  color: #FFFFFF;
+  background: #3a5e96;
+}
+
+.s-contact .form-field label::after {
+  content: "";
+  position: absolute;
+  left: -5px;
+  top: 50%;
+  margin-top: -6px;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 5px solid #3a5e96;
+}
+
+.color{
+  color:white;
+}
+
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+  display: block;
+  height: 6rem;
+  padding: 1.5rem 0;
+  border: 0;
+  outline: none;
+  color: #333333;
+  font-family: "montserrat-light", sans-serif;
+  font-size: 1.4rem;
+  line-height: 3rem;
+  max-width: 100%;
+  background: transparent;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-content input[type="email"],
+.contact-content input[type="number"],
+.contact-content input[type="search"],
+.contact-content input[type="text"],
+.contact-content input[type="tel"],
+.contact-content input[type="url"],
+.contact-content input[type="password"],
+.contact-content textarea,
+.contact-content select {
+  color: rgba(255, 255, 255, 0.6);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  margin-bottom: 0.9rem;
+}
+
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+  display: block;
+  height: 6rem;
+  padding: 1.5rem 0;
+  border: 0;
+  outline: none;
+  color: #333333;
+  font-family: "montserrat-light", sans-serif;
+  font-size: 1.4rem;
+  line-height: 3rem;
+  max-width: 100%;
+  background: transparent;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  padding-right: 50%;
+}
+
+
+
+
+div.calendar.popup
+{
+  margin-left: -40px;
+  margin-top: -100px;
+  z-index:100000;
+}
+div.calendar td.weekend{
+    background:#b5cfe9;
+}
+div.calendar .today{
+    background: #D9360D !important;
+}
+div.calendar .title, div.calendar .button{
+    color:#f9621a;
+}
+div.calendar table
+{
+  background-color: #eee;
+  border: 1px solid #aaa;
+  border-collapse: collapse;
+}
+
+div.calendar thead {
+  background-color: white;
+}
+
+div.calendar td,
+div.calendar th
+{
+  font-size: 11px;
+  padding: 3px;
+  text-align: center;
+}
+
+div.calendar td.title
+{
+  font-weight: bold;
+}
+
+div.calendar th
+{
+  background: #ddd;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  font-weight: bold;
+  color: #555;
+}
+
+div.calendar tr.days td {
+  width: 2em;
+  color: #555;
+  text-align: center;
+  cursor: pointer;
+}
+
+div.calendar tr.days td:hover:not(.unselectable),
+div.calendar td.button:hover:not(.unselectable)
+{
+  background-color: #0178b8;
+  color: #fff;
+  cursor: pointer;
+}
+
+.unselectable {
+  cursor: default !important;
+}
+
+div.calendar tr.days td:active
+div.calendar td.button:active
+{
+  background-color: #cde;
+}
+
+div.calendar tr.days td.selected
+{
+  font-weight: bold;
+  background-color: #fff;
+  color: #000;
+}
+
+div.calendar tr.days td.today
+{
+  font-weight: bold;
+  color: #fff;
+}
+
+div.calendar tr.days td.otherDay
+{
+  color: #95959A;
+}
+.text_logo{
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.55) !important;
+}
+
+.scroll{
+  scroll-behavior: smooth;
+  animation-delay: 1s;
+}
